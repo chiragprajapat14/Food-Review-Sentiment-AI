@@ -11,8 +11,8 @@ st.set_page_config(page_title="Food Review AI", page_icon="🍔", layout="center
 
 @st.cache_resource
 def load_assets():
-    model = tf.keras.models.load_model("food_sentiment_model.keras")
-    with open("tokenizer.pkl", "rb") as f:
+    model = tf.keras.models.load_model("food_sentiment_model (1).keras")
+    with open("tokenizer (1).pkl", "rb") as f:
         tokenizer = pickle.load(f)
     return model, tokenizer
 
